@@ -12,9 +12,13 @@ const DOMSelectors = {
 DOMSelectors.form.addEventListener("submit", function(event){
     event.preventDefault();
     const title = document.querySelector(".title").value;
-    const imgLink = document.querySelector(".img-link").value;
+    const imgLink = document.querySelector(".imgLink").value;
     DOMSelectors.container.insertAdjacentHTML("beforeend", 
     `<div class="card">
     <h2 class="card-header">${title}</h2>
-    <a class = "imgLink"> ${imgLink}</h2></div>`);
+    <img src="${imgLink}" alt=""></div>`);
+});
+
+DOMSelectors.button.addEventListener("click", function(event){
+    event.
 });
